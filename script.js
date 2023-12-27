@@ -3,7 +3,7 @@ function stringChop(str, size) {
 	if(str.length<0){
 		return "";
 	}
-	if(size==undefined){
+	if(size==""){
 		return "";
 	}
 	for(let i=0;i<str.length;i++){
@@ -25,9 +25,9 @@ return arr;
 
 // Do not change the code below
 
-//const str = prompt("Enter String.");
+const str = prompt("Enter String.");
 
 
-//const size = prompt("Enter Chunk Size.");
+const size = prompt("Enter Chunk Size.");
 
 alert(stringChop(str,Number(size)));
