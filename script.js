@@ -1,5 +1,5 @@
 function stringChop(str, size) {
-  if (str.length == 0 || size <= 0) {
+  if (str.length == 0 ) {
     return [""];
   }
   let arr = [];
