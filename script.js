@@ -1,6 +1,6 @@
 function stringChop(str, size) {
-  if (str.length === 0 || size <= 0) {
-    return [];
+  if (str.length == 0 || size <= 0) {
+    return [""];
   }
   let arr = [];
   let substring = "";
