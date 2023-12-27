@@ -1,33 +1,21 @@
-function stringChop(str, size) {
-  let arr=[],subarr=[];
-	if(str.length==0){
-		return "";
-	}
-	if(size==""){
-		return "";
-	}
-	for(let i=0;i<str.length;i++){
-		if(subarr.length<size){
-			subarr.push(str[i]);
-		}
-		else{
-			arr.push(subarr);
-			subarr=[];
-			subarr.push(str[i]);
-		}
-	}
-if(subarr.length>0){
-	arr.push(subarr);
+unction stringChop(str, size) {
+  if (str.length === 0 || size <= 0) {
+    return [];
+  }
+  let arr = [];
+  let substring = "";
+ 
+  for (let i = 0; i < str.length; i++) {
+    substring += str[i];
+    
+    if (substring.length === size || i === str.length - 1) {
+      arr.push(substring);
+      substring = "";
+    }
+  }
+  return arr;
 }
-return arr;
-}
-
-
 // Do not change the code below
-
 const str = prompt("Enter String.");
-
-
-const size = prompt("Enter Chunk Size.");
-
-alert(stringChop(str,Number(size)));
+const size = parseInt(prompt("Enter Chunk Size."), 10);
+alert(stringChop(str, size));
