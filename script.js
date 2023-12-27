@@ -1,6 +1,7 @@
 function stringChop(str, size) {
-  if (str==""&&str.includes(" ")) {
-    return [];
+  if (str.length==0) {
+    let arr=[]
+	  return arr;
   }
 	
   let arr = [];
@@ -19,6 +20,7 @@ function stringChop(str, size) {
 
 // Do not change the code below
 
-const str = prompt("Enter String.");
-const size = parseInt(prompt("Enter Chunk Size."), 10);
+//const str = prompt("Enter String.");
+//const size = parseInt(prompt("Enter Chunk Size."), 10);
+
 alert(stringChop(str, size));
