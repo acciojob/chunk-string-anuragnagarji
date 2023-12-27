@@ -1,4 +1,4 @@
-unction stringChop(str, size) {
+function stringChop(str, size) {
   if (str.length === 0 || size <= 0) {
     return [];
   }
